@@ -1,0 +1,216 @@
+/* fonts */
+
+@font-face {
+   font-family: "archivo-bold";
+   src: url("../fonts/Archivo-Bold.ttf");
+}
+
+@font-face {
+   font-family: "archivo";
+   src: url("../fonts/Archivo-Regular.ttf");
+}
+
+@font-face {
+   font-family: "vazir";
+   src: url("../fonts/Vazir-Regular.ttf");
+}
+
+@font-face {
+   font-family: "titr";
+   src: url("../fonts/BTitrBd.ttf");
+}
+
+:root {
+   --primary-color: #4d4c7d;
+   --secodary-color: #363062;
+   --bg-color: #f3fdfc;
+   --section-color: #e0fffc;
+}
+
+body {
+   background-color: var(--secodary-color);
+   font-family: "archivo";
+}
+
+/* header */
+
+.header {
+   height: 100px;
+   font-family: "archivo-bold";
+   font-size: 20px;
+   background: var(--bg-color);
+}
+
+.header-title {
+   height: 100%;
+   line-height: 25px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0 35px;
+}
+
+/* main */
+
+/* intruduce */
+
+.intruduce {
+   background-color: var(--secodary-color);
+   display: flex;
+   flex-direction: column;
+   font-family: "vazir";
+   direction: rtl;
+   padding: 0 15px;
+}
+
+.intruduce-pic {
+   display: block;
+   width: 220px;
+   height: 230px;
+   margin: 45px auto;
+   border-radius: 100%;
+   border: groove 10px var(--section-color);
+}
+
+.intruduce-tilte {
+   color: whitesmoke;
+   font-family: "titr";
+   font-size: 25px;
+}
+
+.intruduce-line {
+   width: 200px;
+   height: 3px;
+   border-radius: 5px;
+   background-color: var(--section-color);
+   margin: 10px 0;
+}
+
+.intruduce-desc {
+   color: whitesmoke;
+   margin-top: 10px;
+   margin-bottom: 50px;
+}
+
+/* aboute me and skills and others */
+
+.abouteme,
+.skills,
+.others,
+.contact {
+   background-color: var(--section-color);
+   padding: 15px 15px 70px 40px;
+   margin-top: 70px;
+}
+
+.contact {
+   background-color: #0b2436;
+   color: white;
+   box-shadow: 0 0 5px white;
+}
+
+.abouteme-title,
+.skills-title,
+.otehrs-title,
+.contact-title {
+   display: flex;
+   justify-content: flex-end;
+   align-items: baseline;
+   padding: 30px 0;
+}
+
+.abouteme-header,
+.skills-header,
+.otehrs-header,
+.contact-header {
+   font-family: "titr";
+   font-size: 20px;
+   margin-right: 10px;
+}
+
+.abouteme-desc,
+.skills-desc,
+.otehrs-desc,
+.contact-desc {
+   font-family: "vazir";
+   direction: rtl;
+   line-height: 29px;
+   position: relative;
+   padding-right: 20px;
+}
+
+.abouteme-desc::before,
+.skills-desc::before,
+.otehrs-desc::before {
+   content: "";
+   position: absolute;
+   width: 2.5px;
+   height: 100%;
+   background-color: var(--secodary-color);
+   right: 0px;
+   border-radius: 20px;
+}
+
+.abouteme-icon,
+.skills-icon,
+.otehrs-icon,
+.contact-icon {
+   font-size: 40px;
+   color: var(--secodary-color);
+}
+
+.contact-icon {
+   color: white;
+}
+
+.skills-item {
+   list-style: disc;
+   margin-right: 20px;
+   padding: 10px 0;
+   line-height: 16px;
+}
+
+.otehrs-item {
+   margin-right: 20px;
+   padding: 10px 0;
+   line-height: 18px;
+}
+
+.otehrs-item:nth-child(1),
+.otehrs-item:nth-child(2),
+.otehrs-item:nth-child(3),
+.otehrs-item:nth-child(4) {
+   list-style: square;
+}
+
+.otehrs-item:nth-child(4) {
+   margin-bottom: 30px;
+}
+
+.contact-item:nth-child(1) {
+   margin-bottom: 60px;
+   direction: rtl;
+   text-align: right;
+}
+
+.contact-item {
+   margin-top: 10px;
+}
+
+.contact-desc {
+   direction: ltr;
+}
+
+.contact-item a {
+   text-decoration: none;
+   list-style: none;
+   color: white;
+}
+
+/* aside */
+
+/* footer */
+
+.footer {
+   height: 150px;
+}
